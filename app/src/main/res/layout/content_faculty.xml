@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/mini"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mini"/>
+
+
+         <ImageView
+        android:id="@+id/bikku"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/bikku"/>
+
+         <ImageView
+        android:id="@+id/shajan"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/shajan"/>
+
+         <ImageView
+        android:id="@+id/ambili"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ambili"/>
+
+    <ImageView
+        android:id="@+id/rani"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/rani"/>
+
+    <ImageView
+        android:id="@+id/ansu"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ansu"/>
+
+    <ImageView
+        android:id="@+id/libin"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/libin"/>
+
+    <ImageView
+        android:id="@+id/abin"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/abin"/>.
+
+    <ImageView
+        android:id="@+id/akhil"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/akhil"/>
+
+    <ImageView
+        android:id="@+id/anoopa"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/anoopa"/>
+
+    <ImageView
+        android:id="@+id/deepa"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/deepa"/>
+
+    <ImageView
+        android:id="@+id/gopee"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/gopee"/>
+
+    <ImageView
+        android:id="@+id/jacob"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/jacob"/>
+
+    <ImageView
+        android:id="@+id/jijo"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/jijo"/>
+
+    <ImageView
+        android:id="@+id/lija"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/lija"/>
+
+    <ImageView
+        android:id="@+id/kavitha"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/kavitha"/>
+
+    <ImageView
+        android:id="@+id/preetha"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/preetha"/>
+
+    <ImageView
+        android:id="@+id/rajesh"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/rajesh"/>
+
+    <ImageView
+        android:id="@+id/reji"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/reji"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here for more"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff0000"
+            android:onClick="fa"/>
+
+    </LinearLayout>
+</ScrollView>
