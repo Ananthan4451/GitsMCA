@@ -27,10 +27,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".mcainte"
-            android:label="@string/title_activity_mcainte"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".mcareg"
             android:label="@string/title_activity_mcareg"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -41,10 +37,6 @@
         <activity
             android:name=".Administrator"
             android:label="@string/title_activity_administrator"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Registration"
-            android:label="@string/title_activity_registration"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Course"

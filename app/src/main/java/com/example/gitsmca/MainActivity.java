@@ -77,7 +77,7 @@ public void gallery(View V){
     startActivity(i);
 }
 public void regi(View V){
-    Intent i=new Intent(this, Registration.class);
+    Intent i=new Intent(this, mcareg.class);
     startActivity(i);
 }
     @Override
