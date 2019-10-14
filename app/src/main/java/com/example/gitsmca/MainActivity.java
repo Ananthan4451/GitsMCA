@@ -1,6 +1,7 @@
 package com.example.gitsmca;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,8 +24,10 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class MainActivity extends AppCompatActivity
 
+
        implements NavigationView.OnNavigationItemSelectedListener {
     ViewFlipper viewflip;
+    SQLiteDatabase db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+        db=openOrCreateDatabase("mca",MODE_PRIVATE,null);
+        String query="create table if not exists course_reg(firstname text,lastname text,dob date,gender text,address varchar(50),email_id varchar(20),phno Number,qaulfication varchar(20),cgpa float,prev_uni varchar(30))";
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -116,8 +121,12 @@ public void regi(View V){
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            Intent i=new Intent(this, MainActivity.class);
+            Intent i = new Intent(this, MainActivity.class);
             startActivity(i);
+//        }else if (id==R.id.login) {
+//            intent i = new intent(this.login. class);
+//            startActivity(i);
+
         } else if (id == R.id.faculty) {
   Intent i=new Intent(this, Faculty.class);
   startActivity(i);

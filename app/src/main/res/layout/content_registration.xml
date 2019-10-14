@@ -8,16 +8,7 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
         android:background="@mipmap/s12"
-
         tools:layout_editor_absoluteY="8dp">
-
-        <!--<ImageView
-            android:id="@+id/imageView11"
-            android:layout_marginTop="40dp"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/choose" />-->
-
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="330dp"
@@ -26,7 +17,6 @@
         android:onClick="regu"
         android:layout_marginLeft="20dp"
         android:src="@drawable/mcare" />
-
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="330dp"
