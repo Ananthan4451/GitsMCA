@@ -5,8 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,10 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class MainActivity extends AppCompatActivity
 
@@ -77,7 +72,7 @@ public void gallery(View V){
     startActivity(i);
 }
 public void regi(View V){
-    Intent i=new Intent(this, mcareg.class);
+    Intent i=new Intent(this, Registration.class);
     startActivity(i);
 }
     @Override
@@ -141,7 +136,7 @@ public void regi(View V){
             intent.setData(Uri.parse("https://www.google.co.in/maps/place/Saintgits+College+of+Engineering,+Kottayam/@9.509847,76.5487973,17z/data=!4m5!3m4!1s0x3b062ed484f475a7:0xea66b5d0e55062ca!8m2!3d9.509847!4d76.550986"));
             startActivity(intent);
         } else if (id == R.id.Reg) {
-            Intent i=new Intent(this,mcareg.class);
+            Intent i=new Intent(this, Registration.class);
             startActivity(i);
         } else if (id == R.id.aboutus) {
             Intent intent=new Intent(Intent.ACTION_VIEW);

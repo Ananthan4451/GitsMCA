@@ -1,6 +1,5 @@
 package com.example.gitsmca;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,16 +10,24 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class mcareg extends AppCompatActivity {
+public class Registration extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mcareg);
+        setContentView(R.layout.activity_registration);
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
+//        FloatingActionButton fab = findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
         String[] arraySpinner = new String[] {
                 "BCA", "Bsc.Computer Science", "Bsc.Physics", "Bsc.Maths", "Bsc.Chemistry","Bsc.Electronics","Comp Science",
                 "Bio Science", "Commerce"
@@ -38,13 +45,14 @@ public class mcareg extends AppCompatActivity {
                 android.R.layout.simple_spinner_item, arraycourse);
         course.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         s1.setAdapter(course);
-        }
+    }
+    public void reset(View V){
 
-public void reset(View V){
-
-}
+    }
     @Override
     public void onBackPressed() {
         finish();
     }
 }
+
+

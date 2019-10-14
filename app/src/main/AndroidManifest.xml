@@ -16,7 +16,11 @@
         android:roundIcon="@mipmap/gits_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Gallery_Popup"></activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Gallery_Popup" />
         <activity android:name=".cregu" />
         <activity android:name=".cinte" />
         <activity android:name=".splash">
@@ -26,10 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".mcareg"
-            android:label="@string/title_activity_mcareg"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".select"
             android:label="@string/title_activity_select"
