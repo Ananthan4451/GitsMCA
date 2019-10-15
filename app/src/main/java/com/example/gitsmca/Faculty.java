@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.gitsmca.ui.login.Login;
+
 public class Faculty extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -83,6 +85,9 @@ public void fa (View V){
 
             Intent i=new Intent(this, MainActivity.class);
             startActivity(i); finish();
+        }else if (id==R.id.login) {
+            Intent i = new Intent(this, Login.class);
+            startActivity(i);
         } else if (id == R.id.faculty) {
             Intent i=new Intent(this, Faculty.class);
             startActivity(i); finish();

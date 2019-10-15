@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import com.example.gitsmca.ui.login.Login;
 import com.github.chrisbanes.photoview.PhotoView;
 
 public class Gallery extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -191,6 +192,9 @@ public class Gallery extends AppCompatActivity implements NavigationView.OnNavig
             Intent intent=new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse("https://saintgits.org/mca-college/about-us/profile/"));
             startActivity(intent);
+        }else if (id==R.id.login) {
+            Intent i = new Intent(this, Login.class);
+            startActivity(i);
         } else if (id == R.id.admin) {
             Intent i=new Intent(this, Administrator.class);
             startActivity(i); finish();

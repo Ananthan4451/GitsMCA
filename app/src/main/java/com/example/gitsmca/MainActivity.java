@@ -17,7 +17,8 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-import com.example.gitsmca.ui.login.LoginActivity;
+import com.example.gitsmca.ui.login.Login;
+
 
 public class MainActivity extends AppCompatActivity
        implements NavigationView.OnNavigationItemSelectedListener {
@@ -125,7 +126,7 @@ public void regi(View V){
             Intent i = new Intent(this, MainActivity.class);
             startActivity(i);
         }else if (id==R.id.login) {
-            Intent i = new Intent(this, LoginActivity.class);
+            Intent i = new Intent(this, Login.class);
             startActivity(i);
 
         } else if (id == R.id.faculty) {

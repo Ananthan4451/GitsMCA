@@ -22,7 +22,7 @@ import com.example.gitsmca.R;
 import com.example.gitsmca.ui.login.LoginViewModel;
 import com.example.gitsmca.ui.login.LoginViewModelFactory;
 
-public class LoginActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
