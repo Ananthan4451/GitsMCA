@@ -1,7 +1,6 @@
 package com.example.gitsmca;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -42,7 +41,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        int images[]={R.drawable.wa, R.drawable.ssb, R.drawable.ssc, R.drawable.wb, R.drawable.wc, R.drawable.ssg, R.drawable.ssf, R.drawable.wd, R.drawable.we};
+        int images[]={R.drawable.wa, R.drawable.ssb, R.drawable.ssc, R.drawable.wb, R.drawable.wc, R.drawable.ssg, R.drawable.ssf,
+                R.drawable.wd, R.drawable.we};
 viewflip=findViewById(R.id.viewflip);
 for(int i=0;i< images.length;i++)
 {
@@ -150,7 +150,7 @@ public void regi(View V){
             intent.setData(Uri.parse("https://saintgits.org/mca-college/about-us/profile/"));
             startActivity(intent);
         } else if (id == R.id.admin) {
-            Intent i=new Intent(this, Administrator.class);
+            Intent i=new Intent(this, Register.class);
             startActivity(i);
 
         }

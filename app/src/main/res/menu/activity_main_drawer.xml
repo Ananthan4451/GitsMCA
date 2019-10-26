@@ -43,7 +43,7 @@
             <item
                 android:id="@+id/admin"
                 android:icon="@drawable/admin"
-                android:title="Administrator" />
+                android:title="User Registration" />
 
         </menu>
     </item>

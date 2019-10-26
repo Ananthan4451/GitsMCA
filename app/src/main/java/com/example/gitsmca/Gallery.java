@@ -196,7 +196,7 @@ public class Gallery extends AppCompatActivity implements NavigationView.OnNavig
             Intent i = new Intent(this, Login.class);
             startActivity(i);
         } else if (id == R.id.admin) {
-            Intent i=new Intent(this, Administrator.class);
+            Intent i=new Intent(this, Register.class);
             startActivity(i); finish();
 
         }

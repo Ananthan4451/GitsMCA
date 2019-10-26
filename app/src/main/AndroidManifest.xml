@@ -42,7 +42,7 @@
             android:label="@string/title_activity_select"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Administrator"
+            android:name=".Register"
             android:label="@string/title_activity_administrator"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

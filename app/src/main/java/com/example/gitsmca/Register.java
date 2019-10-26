@@ -16,7 +16,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Administrator extends AppCompatActivity
+public class Register extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 EditText t1,t2;
     @Override
@@ -116,7 +116,7 @@ public void log(View V) {
             intent.setData(Uri.parse("https://saintgits.org/mca-college/about-us/profile/"));
             startActivity(intent);
         } else if (id == R.id.admin) {
-            Intent i=new Intent(this, Administrator.class);
+            Intent i=new Intent(this, Register.class);
             startActivity(i); finish();
         }
 
