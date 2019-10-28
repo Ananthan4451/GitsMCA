@@ -9,25 +9,25 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:text="From SAINTGITS to" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
-            android:textColor="#0000A0"
+            android:textColor="#ff0000"
             android:text="Select your destination." />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#0000A0"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="30dp"
-        android:text="From SAINTGITS to" />
+
 
     <Spinner
         android:id="@+id/spinner3"
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#0000A0"
+        android:background="#0000FF"
         android:textColor="#ffffff"
         android:text="Click here to get buses to your destination" />
 </LinearLayout>
