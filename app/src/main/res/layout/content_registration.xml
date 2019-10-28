@@ -21,7 +21,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:textAlignment="center"
-            android:text="All fields are mandatory" />
+            android:textColor="#ff0000"
+            android:text="*All fields are mandatory" />
 
         <EditText
             android:id="@+id/editText8"

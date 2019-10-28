@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,23 +12,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class Register extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-EditText t1,t2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_administrator);
+        setContentView(R.layout.activity_register);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
 
-t1=(EditText)findViewById(R.id.editText);
-t2=(EditText)findViewById(R.id.editText3);
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -38,21 +36,18 @@ t2=(EditText)findViewById(R.id.editText3);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        String[] arraycourse = new String[] {
+                "STUDENT", "FACULTY"};
+        Spinner s1 = (Spinner) findViewById(R.id.spinner1);
+        ArrayAdapter<String> course = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, arraycourse);
+        course.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        s1.setAdapter(course);
     }
-public void log(View V) {
-    String uname = t1.getText().toString();
-    String pass = t2.getText().toString();
-    if (uname.equals("admin") && pass.equals("admin"))
-    {
-        Intent i=new Intent(this,select.class);
-        startActivity(i);
-    }
-    else{
-        Toast.makeText(getApplicationContext(),"Invalid username or password",Toast.LENGTH_LONG).show();
-    }
-    t1.setText("");
-    t2.setText("");
-}
+
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -66,7 +61,7 @@ public void log(View V) {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.administrator, menu);
+        getMenuInflater().inflate(R.menu.register, menu);
         return true;
     }
 
