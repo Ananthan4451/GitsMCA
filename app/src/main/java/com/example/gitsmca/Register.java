@@ -18,7 +18,6 @@ import android.widget.Spinner;
 
 public class Register extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
