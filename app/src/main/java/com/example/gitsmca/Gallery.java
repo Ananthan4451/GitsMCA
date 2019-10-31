@@ -16,7 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.example.gitsmca.ui.login.Login;
+import com.example.gitsmca.Login;
 import com.github.chrisbanes.photoview.PhotoView;
 
 public class Gallery extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -195,9 +195,7 @@ public class Gallery extends AppCompatActivity implements NavigationView.OnNavig
         }else if (id==R.id.login) {
             Intent i = new Intent(this, Login.class);
             startActivity(i);
-        } else if (id == R.id.admin) {
-            Intent i=new Intent(this, Register.class);
-            startActivity(i); finish();
+
 
         }
 

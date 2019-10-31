@@ -36,11 +36,11 @@
                 android:id="@+id/nav_map"
                 android:icon="@drawable/map"
                 android:title="Locate Saintgits" />
-            <item
-                android:id="@+id/admin"
-                android:icon="@drawable/admin"
-                android:title="User Registration" />
-
+<!--            <item-->
+<!--                android:id="@+id/admin"-->
+<!--                android:icon="@drawable/admin"-->
+<!--                android:title="User Registration" />-->
+<!---->
         </menu>
     </item>
 

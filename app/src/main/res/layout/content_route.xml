@@ -13,19 +13,20 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:textStyle="bold"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="30dp"
-        android:text="From SAINTGITS to" />
+        android:text="To SAINTGITS" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="30dp"
+            android:textStyle="bold"
             android:textColor="#ff0000"
-            android:text="Select your destination." />
+            android:text="Select SECTOR" />
 
 
 
@@ -43,5 +44,6 @@
         android:layout_marginTop="20dp"
         android:background="#0000FF"
         android:textColor="#ffffff"
-        android:text="Click here to get buses to your destination" />
+        android:onClick="sector"
+        android:text="Click here to get buses to your SECTOR" />
 </LinearLayout>

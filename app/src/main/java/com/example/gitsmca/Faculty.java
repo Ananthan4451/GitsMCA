@@ -14,7 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.gitsmca.ui.login.Login;
+import com.example.gitsmca.Login;
 
 public class Faculty extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -108,9 +108,7 @@ public void fa (View V){
             Intent intent=new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse("https://saintgits.org/mca-college/about-us/profile/"));
             startActivity(intent);
-        } else if (id == R.id.admin) {
-            Intent i=new Intent(this, Register.class);
-            startActivity(i); finish();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -46,7 +47,11 @@ public class Register extends AppCompatActivity
         course.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         s1.setAdapter(course);
     }
-
+public void loginn(View V){
+    Intent i = new Intent(this,Login.class);
+    startActivity(i);
+    finish();
+}
 
     @Override
     public void onBackPressed() {
@@ -110,9 +115,7 @@ public class Register extends AppCompatActivity
             Intent intent=new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse("https://saintgits.org/mca-college/about-us/profile/"));
             startActivity(intent);
-        } else if (id == R.id.admin) {
-            Intent i=new Intent(this, Register.class);
-            startActivity(i); finish();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

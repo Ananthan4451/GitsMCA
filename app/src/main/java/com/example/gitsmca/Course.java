@@ -114,9 +114,7 @@ public void regular (View V){
             Intent intent=new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse("https://saintgits.org/mca-college/about-us/profile/"));
             startActivity(intent);
-        } else if (id == R.id.admin) {
-            Intent i=new Intent(this, Register.class);
-            startActivity(i); finish();
+
 
         }
 
