@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
             android:background="@null"
-            android:text="Get registered in GitsMCA now!"
+            android:text="Problem having sign in, Contact administrator!"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="15dp"

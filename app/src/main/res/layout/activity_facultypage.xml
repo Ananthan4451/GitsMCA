@@ -51,20 +51,28 @@
                 android:layout_gravity="center"
                 android:background="@drawable/notes"
                  />
-            <Button
-                android:id="@+id/signout"
-                style="?android:textAppearanceSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:background="#0000FF"
-                android:text="Logout"
-                android:layout_marginLeft="50dp"
-                android:layout_marginBottom="30dp"
-                android:textColor="#ffffff"
-                android:textStyle="bold"
-                android:onClick="signOut"/>
-        </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/admisn"
+                />
 
+        </LinearLayout>
+        <Button
+            android:id="@+id/signout"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#0000FF"
+            android:text="Logout"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:onClick="signOut"/>
     </LinearLayout>
 </LinearLayout>
