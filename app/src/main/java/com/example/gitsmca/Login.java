@@ -74,11 +74,11 @@ login.setOnClickListener(new View.OnClickListener() {
                             progressBar.setVisibility(View.GONE);
                             if (!task.isSuccessful()) {
                                 // there was an error
-                                if (password.length() < 2) {
+                                if (password.length() < 4) {
 
                                     pass.setError("password too short");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Authentication failed, check your email and password or sign up", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), "Authentication failed, check your email and password or internet connection", Toast.LENGTH_LONG).show();
                                 }
                             } else {
                                 Intent in = new Intent(Login.this, facultypage.class);
@@ -95,9 +95,7 @@ login.setOnClickListener(new View.OnClickListener() {
 
 public void signup(View V)
 {
-    Intent i = new Intent(getApplicationContext(),Register.class);
-    startActivity(i);
-    finish();
+
 }
 }
 

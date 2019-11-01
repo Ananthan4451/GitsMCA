@@ -8,9 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 public class Registration extends AppCompatActivity {
+EditText fn,ln,dob,address,emailid,ph,ccpa,college;
+Button save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +24,7 @@ public class Registration extends AppCompatActivity {
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+
         String[] arraySpinner = new String[] {
                 "BCA", "Bsc.Computer Science", "Bsc.Physics", "Bsc.Maths", "Bsc.Chemistry","Bsc.Electronics","Comp Science",
                 "Bio Science", "Commerce"
@@ -45,6 +42,15 @@ public class Registration extends AppCompatActivity {
                 android.R.layout.simple_spinner_item, arraycourse);
         course.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         s1.setAdapter(course);
+
+        fn=(EditText)findViewById(R.id.editText8);
+        ln=(EditText)findViewById(R.id.editText9);
+        dob=(EditText)findViewById(R.id.editText10);
+        address=(EditText)findViewById(R.id.editText11);
+        emailid=(EditText)findViewById(R.id.editText12);
+        ph=(EditText)findViewById(R.id.editText13);
+        ccpa=(EditText)findViewById(R.id.editText14);
+        college=(EditText)findViewById(R.id.editText16);
     }
     public void reset(View V){
 
