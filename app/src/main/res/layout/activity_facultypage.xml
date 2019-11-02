@@ -50,6 +50,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/notes"
+                android:onClick="notess"
                  />
             <ImageView
                 android:id="@+id/imageView5"

@@ -1,6 +1,7 @@
 package com.example.gitsmca;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -50,7 +51,11 @@ public class facultypage extends AppCompatActivity {
             }
         });
     }
-
+    public void notess(View V){
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://mcamdl.saintgits.org/course/index.php?categoryid=2"));
+        startActivity(intent);
+    }
 
     }
 
